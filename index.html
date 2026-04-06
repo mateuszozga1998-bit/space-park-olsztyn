@@ -224,14 +224,16 @@
     }
 
     .about-visual {
-      background: linear-gradient(135deg, rgba(124,58,237,.3), rgba(79,195,247,.2));
       border: 1px solid rgba(79,195,247,.2);
       border-radius: 16px;
       aspect-ratio: 4/3;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 5rem;
+      overflow: hidden;
+    }
+    .about-visual img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
 
     .about-points { display: flex; flex-direction: column; gap: 1.5rem; margin-top: 2rem; }
@@ -521,7 +523,9 @@
       <h2 class="section-title">Rodzinny park,<br><span class="accent">kosmiczne wrażenia</span></h2>
       <p class="section-desc">Space Park to największy park rozrywki aktywnej w województwie warmińsko-mazurskim. Miejsce, gdzie dobra zabawa łączy się z ruchem i sportem.</p>
       <div class="about-grid">
-        <div class="about-visual">🚀</div>
+        <div class="about-visual">
+          <img src="https://spacepark.pl/assetssp/img/tranp.jpg" alt="Space Park Olsztyn – strefa trampolin" loading="lazy">
+        </div>
         <div>
           <p style="color: var(--gray); margin-bottom: 1.5rem;">Jesteśmy parkiem stworzonym z pasji do aktywnego spędzania czasu. Na ponad 3200 m² znajdziesz strefy dla dzieci, młodzieży i dorosłych — każdy znajdzie coś dla siebie, niezależnie od wieku czy kondycji fizycznej.</p>
           <div class="about-points">
